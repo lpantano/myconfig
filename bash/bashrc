@@ -80,4 +80,7 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 
+#bashaggent alias
+alias upagent='eval "$(ssh-agent -s)";ssh-add '
+
 export PATH=~/bin:$PATH
