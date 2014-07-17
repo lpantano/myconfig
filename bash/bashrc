@@ -11,9 +11,6 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 set -o noclobber
 set -o vi
 
-#vim
-source .vimrc
-
 ##BEGIN GIT##
 # Set config variables first
 #GIT_PROMPT_ONLY_IN_REPO=1
@@ -31,10 +28,18 @@ MAG="\[\033[0;35m\]"
 NO_COLOUR="\[\033[0m\]"
 
 PS1="$YELLOW\u@\h$GREEN:\w$MAG\$(parse_git_branch)$NO_COLOUR\$ "
+#PS1="\e[0;33m\u@\h:\e[m \e[0;35m\w\e[m\a$ "
 
 alias gpom='git pull origin master'
-alias gPom='git push origin master'
+alias ghom='git push origin master'
 alias gpum='git pull upstream master'
+alias gcu='git checkout -b upstream upstream/master'
+
+function gitlog(){
+       
+ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --name-status"
+
+}
 
 source .git-completion.bash
 
@@ -46,7 +51,6 @@ export TERM=xterm-256color
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-
 # don't put duplicate lines in the history. See bash(1) for more options
 # don't overwrite GNU Midnight Commander's setting of `ignorespace'.
 HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoredups
@@ -57,12 +61,7 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
-#shopt -s checkwinsize
-
-
-force_color_prompt=yes
-
-#PS1="\e[0;33m\u@\h:\e[m \e[0;35m\w\e[m\a$ "
+shopt -s checkwinsize
 
 
 # enable color support of ls and also add handy aliases
@@ -80,7 +79,5 @@ fi
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
-
-
 
 export PATH=~/bin:$PATH
