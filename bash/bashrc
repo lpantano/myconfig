@@ -47,7 +47,7 @@ function gitlog(){
 
 }
 
-source git-completion.bash
+source ~/myconfig/bash/git-completion.bash
 
 ##END GIT##
 
