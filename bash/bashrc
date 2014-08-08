@@ -35,6 +35,12 @@ alias ghom='git push origin master'
 alias gpum='git pull upstream master'
 alias gcu='git checkout -b upstream upstream/master'
 
+function gjoin(){
+       
+       "git rebase -i HEAD~"$1      
+       
+}
+
 function gitlog(){
        
  git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --name-status"
@@ -79,5 +85,8 @@ fi
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
+
+#bashaggent alias
+alias upagent='eval "$(ssh-agent -s)";ssh-add '
 
 export PATH=~/bin:$PATH
