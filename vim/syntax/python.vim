@@ -177,7 +177,7 @@ if s:Python2Syntax()
   syn match pythonBrackets "[(|)]" contained skipwhite
   syn match pythonFunctionAlone "\.*\%(\w\|_\)\+(" contains=pythonCustomVars
   syn match pythonCustomVars "(" contained contains=pythonParam
-  syn match pythonClassCall "\%(\w\|_\)\+\.\(format\|start\|replace\)\@!" contains=pythonClassAll
+  syn match pythonClassCall "\%(\w\|_\)\+\.\(format\|start\|replace\|split\)\@!" contains=pythonClassAll
   syn match pythonClassAll "\."
   syn keyword pythonBoolen   as nonlocal None
   syn keyword pythonBoolean     True False
@@ -429,7 +429,7 @@ if s:Enabled("g:python_highlight_builtin_funcs")
   syn keyword pythonBuiltinFunc	issubclass iter len list locals map max
   syn keyword pythonBuiltinFunc	min next object oct open ord
   syn keyword pythonBuiltinFunc	pow property range
-  syn keyword pythonBuiltinFunc	repr replace reversed round set setattr startswith
+  syn keyword pythonBuiltinFunc	repr replace reversed round set setattr startswith split
   syn keyword pythonBuiltinFunc	slice sorted staticmethod str sum super tuple
   syn keyword pythonBuiltinFunc	type vars zip
 endif

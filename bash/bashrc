@@ -52,7 +52,7 @@ source ~/myconfig/bash/git-completion.bash
 ##END GIT##
 
 # use a color terminal
-export TERM=screen-256color
+export TERM="screen-256color"
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
