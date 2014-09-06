@@ -11,6 +11,10 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 set -o noclobber
 set -o vi
 
+#add ssh-agent
+source ~/myconfig/bash/ssh-find-agent/ssh-find-agent.bash
+set_ssh_agent_socket
+
 ##BEGIN GIT##
 # Set config variables first
 #GIT_PROMPT_ONLY_IN_REPO=1
