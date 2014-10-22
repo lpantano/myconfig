@@ -16,3 +16,6 @@
 [submodule "bash/ssh-find-agent"]
 	path = bash/ssh-find-agent
 	url = https://github.com/wwalker/ssh-find-agent.git
+[submodule "vim/bundle/VimOrganizer"]
+	path = vim/bundle/VimOrganizer
+	url = https://github.com/hsitz/VimOrganizer.git
