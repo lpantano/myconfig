@@ -65,3 +65,19 @@ hi Type guifg=#581A84 gui=none ctermfg=54 cterm=none
 hi pythonBuiltin guifg=#D5312B gui=none ctermfg=166 cterm=none
 hi TabLineFill guifg=#531115 gui=none ctermfg=52 cterm=none
 
+" for org
+" hi! DONETODO guifg=green ctermfg=green
+" hi! NOTDONETODO guifg=red ctermfg=lightred
+hi! Org_Tag guifg=lightgreen ctermfg=blue
+" hi! Org_Config_Line guifg=darkgray ctermfg=magenta
+" hi! Org_Drawer guifg=pink ctermfg=magenta
+" hi! Org_Drawer_Folded guifg=pink ctermfg=magenta gui=bold cterm=bold
+" hi! Org_Property_Value guifg=pink ctermfg=magenta
+" hi! Org_Block guifg=#555555 ctermfg=magenta
+" hi! Org_Src_Block guifg=#555555 ctermfg=magenta
+hi! Org_Star guifg=#444444 ctermfg=darkgray
+hi! Props guifg=#ffa0a0 ctermfg=gray
+highlight OrgColumnHeadings guibg=#444444 guifg=#aaaaaa gui=underline
+hi TODO guifg=#D02B2B ctermfg=red
+hi DONE guifg=#D02B2B ctermfg=green
+
