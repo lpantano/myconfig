@@ -18,10 +18,10 @@
      ("flagged" :foreground "yellow")
      ("deleted" :foreground "red")))
  '(org-todo-keyword-faces
-   '(("DBUG" . (:background "gold" :foreground "indianred3" :weight bold))
+   '(("NOW" . (:background "orange" :foreground "black" :weight bold))
      ("TODO" . (:background "red" :foreground "black" :weight bold))
-     ("WAIT" . (:background "black" :foreground "yellow" :weight bold))
-     ("FEEDBACK" . (:background "orange" :foreground "black" :weight bold))
+     ("QUEUE" . (:background "black" :foreground "yellow" :weight bold))
+     ("FEEDBACK" . (:background "yellow" :foreground "black" :weight bold))
      ("CANCELED" . (:background "snow3" :foreground "black" :weight bold))
      ))
  '(org-tag-faces

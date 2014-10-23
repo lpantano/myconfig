@@ -15,8 +15,12 @@ let python_highlight_all = 1
 let python_version_2 = 1
 
 " quick-save \s
-noremap <Leader>s :update<CR>
-imap xx <Esc>
+noremap <C-c> :update<CR>
+noremap <M-a> :insert<CR>
+vnoremap <C-c> :update<CR>
+inoremap <C-c> <ESC>:update<CR>
+inoremap <M-c> <Esc>
+" imap <C-c> <Esc>:w<CR>
 
 
 " Tell vim to remember certain things when we exit
@@ -95,3 +99,4 @@ endfunction
 
 " add .template as R
 au BufNewFile,BufRead *.template set filetype=rmd
+
