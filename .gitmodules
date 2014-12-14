@@ -13,3 +13,6 @@
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
 	url = https://www.github.com/tpope/vim-fugitive.git
+[submodule "bash/ssh-find-agent"]
+	path = bash/ssh-find-agent
+	url = https://github.com/wwalker/ssh-find-agent.git
