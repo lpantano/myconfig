@@ -16,3 +16,12 @@
 [submodule "bash/ssh-find-agent"]
 	path = bash/ssh-find-agent
 	url = https://github.com/wwalker/ssh-find-agent.git
+[submodule "emacs/themes/emacs-color-theme-solarized"]
+	path = emacs/themes/emacs-color-theme-solarized
+	url = https://github.com/sellout/emacs-color-theme-solarized.git
+[submodule "emacs/markdown-mode"]
+	path = emacs/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git
+[submodule "prelude"]
+	path = prelude
+	url = git://github.com/lpantano/prelude.git
