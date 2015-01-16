@@ -6,3 +6,5 @@ http://orgmode.org/worg/org-tutorials/org4beginners.html
 * `C-c C-c` add tag
 * show list by tags
 *  file add to agenda `C-c [`
+*  move window `C-x o`
+*  remove current window `C-x 0`
