@@ -8,3 +8,4 @@ http://orgmode.org/worg/org-tutorials/org4beginners.html
 *  file add to agenda `C-c [`
 *  move window `C-x o`
 *  remove current window `C-x 0`
+*  insert deadline `C-c C-d` or schedule `C-c C-s`
