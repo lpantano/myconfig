@@ -25,3 +25,6 @@
 [submodule "prelude"]
 	path = prelude
 	url = https://github.com/lpantano/prelude.git
+[submodule "emacs/lintr"]
+	path = emacs/lintr
+	url = https://github.com/jimhester/lintr

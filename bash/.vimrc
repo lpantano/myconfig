@@ -16,6 +16,7 @@ let python_version_2 = 1
 
 " quick-save \s
 noremap <C-c> :update<CR>
+noremap <C-x><C-c> :quit<CR>
 noremap <M-a> :insert<CR>
 vnoremap <C-c> :update<CR>
 inoremap <C-c> <ESC>:update<CR>

@@ -19,10 +19,14 @@
      ("deleted" :foreground "red")))
  '(org-todo-keyword-faces
    '(("NOW" . (:background "orange" :foreground "black" :weight bold))
+     ("DOING" . (:background "orange" :foreground "black" :weight bold))
+     ("PAUSE" . (:background "black" :foreground "yellow" :weight bold))
      ("TODO" . (:background "red" :foreground "black" :weight bold))
      ("QUEUE" . (:background "black" :foreground "yellow" :weight bold))
+     ("NEXT" . (:background "blue" :foreground "snow3" :weight bold))
      ("FEEDBACK" . (:background "yellow" :foreground "black" :weight bold))
      ("CANCELED" . (:background "snow3" :foreground "black" :weight bold))
+     ("CLOSED" . (:background "snow3" :foreground "black" :weight bold))
      ))
  '(org-tag-faces
    '(("PROJ" . (:background "indianred3" :foreground "cornsilk2" :weight bold))

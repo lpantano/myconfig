@@ -104,3 +104,7 @@ alias l='ls -CF'
 alias upagent='eval "$(ssh-agent -s)";ssh-add '
 
 export PATH=~/bin:$PATH
+
+# customr alias
+alias e='emacsclient -t'
+alias ec='emacsclient -c'
