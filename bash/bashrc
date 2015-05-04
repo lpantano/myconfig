@@ -108,3 +108,4 @@ export PATH=~/bin:$PATH
 # customr alias
 alias e='emacsclient -t'
 alias ec='emacsclient -c'
+alias remove_blank_lines='sed -i '/^$/d'
