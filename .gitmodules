@@ -28,3 +28,6 @@
 [submodule "emacs/lintr"]
 	path = emacs/lintr
 	url = https://github.com/jimhester/lintr
+[submodule "vim/bundle/vim-slime"]
+	path = vim/bundle/vim-slime
+	url = https://github.com/jpalardy/vim-slime.git

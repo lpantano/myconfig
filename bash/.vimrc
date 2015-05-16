@@ -17,10 +17,11 @@ let python_version_2 = 1
 " quick-save \s
 noremap <C-c> :update<CR>
 noremap <C-x><C-c> :quit<CR>
-noremap <M-a> :insert<CR>
-vnoremap <C-c> :update<CR>
+" noremap <C-a> :insert<CR>
+" vnoremap <C-c> :update<CR>
 inoremap <C-c> <ESC>:update<CR>
 inoremap <M-c> <Esc>
+inoremap jj <ESC>
 " imap <C-c> <Esc>:w<CR>
 
 
@@ -100,4 +101,6 @@ endfunction
 
 " add .template as R
 au BufNewFile,BufRead *.template set filetype=rmd
+
+let g:slime_target = "tmux"
 
