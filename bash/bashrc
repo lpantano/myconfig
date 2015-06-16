@@ -9,7 +9,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # use some nice bash options
 #set -o noclobber
-# set -o vi
+set -o vi
 
 #add ssh-agent
 
@@ -101,7 +101,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 #bashaggent alias
-alias upagent='eval "$(ssh-agent -s)";ssh-add '
+alias upagent='eval "$(ssh-agent -s)";ssh-add'
 
 export PATH=~/bin:$PATH
 
