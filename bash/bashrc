@@ -8,7 +8,7 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # use some nice bash options
-set -o noclobber
+#set -o noclobber
 set -o vi
 
 #add ssh-agent
@@ -42,10 +42,17 @@ alias ghom='git push origin master'
 alias gpum='git pull upstream master'
 alias gcu='git checkout -b upstream upstream/master'
 
-function gjoin(){
+function gitjoin(){
        
-       "git rebase -i HEAD~"$1      
+ git rebase -i HEAD~"$1"      
        
+}
+
+function gcom(){
+ echo file  $1
+ echo message $2
+ git add $1
+ git commit -m "$2"
 }
 
 function gitlog(){
@@ -59,7 +66,7 @@ source ~/myconfig/bash/git-completion.bash
 ##END GIT##
 
 # use a color terminal
-export TERM="screen-256color"
+# export TERM="screen-256color"
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -89,11 +96,25 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 # some more ls aliases
-alias ll='ls -l'
+alias ll='ls -lh'
 alias la='ls -A'
 alias l='ls -CF'
 
 #bashaggent alias
-alias upagent='eval "$(ssh-agent -s)";ssh-add '
+alias upagent='eval "$(ssh-agent -s)";ssh-add'
 
-export PATH=~/bin:$PATH
+# export PATH=~/bin:$PATH
+
+# customr alias
+alias e='emacsclient -t'
+alias ec='emacsclient -c'
+alias remove_blank_lines="sed -i '/^$/d'"
+alias sq='squeue -u lpantano'
+alias sb='sbatch'
+alias bs='bsub'
+alias bj='bjobs'
+# bcbio files
+bcbdebug='log/bcbio-nextgen-debug.log'
+bcblog='log/bcbio-nextgen.log'
+bcbcmd='log/bcbio-nextgen-commands.log'
+
