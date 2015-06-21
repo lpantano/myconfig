@@ -20,10 +20,17 @@ noremap <C-x><C-c> :quit<CR>
 " noremap <C-a> :insert<CR>
 " vnoremap <C-c> :update<CR>
 inoremap <C-c> <ESC>:update<CR>
-inoremap <M-c> <Esc>
-inoremap jj <ESC>
+" inoremap <M-c> <Esc>
+inoremap qq <ESC>
 " imap <C-c> <Esc>:w<CR>
 
+" moves
+inoremap <M-b> <C-o>l 
+inoremap <M-j> <C-o>j
+inoremap <M-h> <C-o>l
+inoremap <M-k> <C-o>k
+inoremap <M-b> <C-o>b
+inoremap <M-e> <C-o>e
 
 " Tell vim to remember certain things when we exit
 "
