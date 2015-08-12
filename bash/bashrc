@@ -99,6 +99,7 @@ fi
 alias ll='ls -lh'
 alias la='ls -A'
 alias l='ls -CF'
+alias bt='byobu-tmux'
 
 #bashaggent alias
 alias upagent='eval "$(ssh-agent -s)";ssh-add'
