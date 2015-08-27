@@ -14,13 +14,24 @@ highlight MatchParen cterm=bold ctermfg=cyan
 let python_highlight_all = 1
 let python_version_2 = 1
 
+" errors
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+
 " quick-save \s
-noremap <C-c> :update<CR>
-noremap <C-x><C-c> :quit<CR>
+noremap <C-c> :quit<CR>
+noremap <C-x> :update<CR>
 " noremap <C-a> :insert<CR>
 " vnoremap <C-c> :update<CR>
-inoremap <C-c> <ESC>:update<CR>
-" inoremap <M-c> <Esc>
+inoremap <C-x> <ESC>:update<CR>
+inoremap <C-c> <Esc>
 inoremap qq <ESC>
 " imap <C-c> <Esc>:w<CR>
 

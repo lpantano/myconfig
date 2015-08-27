@@ -38,9 +38,13 @@ PS1="$YELLOW\u@\h$GREEN:\w$MAG\$(parse_git_branch)$NO_COLOUR\$ "
 #PS1="\e[0;33m\u@\h:\e[m \e[0;35m\w\e[m\a$ "
 
 alias gpom='git pull origin master'
+alias gpull='git pull origin'
+alias gpush='git push origin'
 alias ghom='git push origin master'
 alias gpum='git pull upstream master'
 alias gcu='git checkout -b upstream upstream/master'
+alias gcheck='git checkout'
+alias gcom='git cm -m'
 
 function gitjoin(){
        
@@ -48,12 +52,6 @@ function gitjoin(){
        
 }
 
-function gcom(){
- echo file  $1
- echo message $2
- git add $1
- git commit -m "$2"
-}
 
 function gitlog(){
        
@@ -99,6 +97,10 @@ fi
 alias ll='ls -lh'
 alias la='ls -A'
 alias l='ls -CF'
+alias bt='byobu-tmux'
+alias mypython='/home/lpantano/soft/myconda/bin/python'
+alias mypip='/home/lpantano/soft/myconda/bin/pip'
+alias bcbiopy='/home/lpantano/soft/bcbio/anaconda/bin/python'
 
 #bashaggent alias
 alias upagent='eval "$(ssh-agent -s)";ssh-add'
@@ -114,7 +116,7 @@ alias sb='sbatch'
 alias bs='bsub'
 alias bj='bjobs'
 # bcbio files
-bcbdebug='log/bcbio-nextgen-debug.log'
-bcblog='log/bcbio-nextgen.log'
-bcbcmd='log/bcbio-nextgen-commands.log'
+bcbdebug='less log/bcbio-nextgen-debug.log'
+bcblog='less log/bcbio-nextgen.log'
+bcbcmd='less log/bcbio-nextgen-commands.log'
 
