@@ -13,10 +13,10 @@ set -o vi
 
 #add ssh-agent
 
-if [ `hostname -s` == "miro" ] ; then
- source ~/myconfig/bash/ssh-find-agent/ssh-find-agent.bash
- set_ssh_agent_socket
-fi
+# if [ `hostname -s` == "miro" ] ; then
+# source ~/myconfig/bash/ssh-find-agent/ssh-find-agent.bash
+# set_ssh_agent_socket
+#fi
 
 ##BEGIN GIT##
 # Set config variables first
