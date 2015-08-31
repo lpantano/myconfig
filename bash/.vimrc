@@ -1,3 +1,4 @@
+let mapleader=","
 execute pathogen#infect()
 filetype plugin indent on
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
@@ -69,6 +70,8 @@ let g:pymode_rope = 0 " to be compatible with jedivim
 autocmd FileType python set completeopt-=preview " not showing __doc__ during autocompletion
 let g:jedi#auto_vim_configuration = 0
 let g:jedi#auto_initialization = 0
+let g:jedi#goto_definitions_command = "<leader>d"
+let g:jedi#rename_command = "<leader>r"
 
 " spell option
 nmap sc :setlocal spell spelllang=en_us
