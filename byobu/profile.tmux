@@ -1,16 +1,18 @@
 # custom
 setw -g mode-mouse on
-bind -t vi-copy y copy-pipe 'xclip -in -selection clipboard'
+# bind -t vi-copy y copy-pipe 'xclip -in -selection clipboard'
 
+set -g @yank_selection 'clipboard'
+# set -g @shell_mode 'vi'
 # tpm
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 
-set -g @plugins '            \
-  tmux-plugins/tpm               \
-  tmux-plugins/tmux-resurrect    \
-  tmux-plugins/tmux-continuum    \
-'
+set -g @plugins 'tmux-plugins/tpm'
+set -g @plugins 'tmux-plugins/tmux-resurrect'
+set -g @plugins 'tmux-plugins/tmux-continuum'
+set -g @plugins 'tmux-plugins/tmux-yank'
+
 set -g @continuum-restore 'on'
 set -g @continuum-save-interval '30'
 
