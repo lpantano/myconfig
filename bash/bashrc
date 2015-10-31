@@ -45,6 +45,9 @@ alias gpum='git pull upstream master'
 alias gcu='git checkout -b upstream upstream/master'
 alias gcheck='git checkout'
 alias gcom='git cm -m'
+alias gfum='git fetch upstream master'
+alias gmup='git merge upstream/master'
+alias gdel='git branch -D'
 
 function gitjoin(){
        
@@ -100,7 +103,8 @@ alias l='ls -CF'
 alias bt='byobu-tmux'
 alias mypython='/home/lpantano/soft/myconda/bin/python'
 alias mypip='/home/lpantano/soft/myconda/bin/pip'
-alias bcbiopy='/home/lpantano/soft/bcbio/anaconda/bin/python'
+alias bcbpy='/home/lpantano/soft/bcbio/anaconda/bin/python'
+alias bcbcondata='/home/lpantano/soft/bcbio/anaconda/bin/conda'
 
 #bashaggent alias
 alias upagent='eval "$(ssh-agent -s)";ssh-add'
@@ -120,3 +124,8 @@ bcbdebug='less log/bcbio-nextgen-debug.log'
 bcblog='less log/bcbio-nextgen.log'
 bcbcmd='less log/bcbio-nextgen-commands.log'
 
+# mounts
+mumount='fusermount -u'
+mountorch='sshfs orch:. orch -o follow_symlinks'
+mountg1='sshfs glasgow1:. glasgow -o follow_symlinks'
+mountg2='sshfs glasgow2:. glasgow -o follow_symlinks'
