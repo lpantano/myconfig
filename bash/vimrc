@@ -29,11 +29,15 @@ let g:syntastic_check_on_wq = 0
 " quick-save \s
 noremap <C-c> :quit<CR>
 noremap <C-x> :update<CR>
+noremap <C-e> <ESC>$a
+noremap <C-w> <ESC>0ei
 " noremap <C-a> :insert<CR>
 " vnoremap <C-c> :update<CR>
 inoremap <C-x> <ESC>:update<CR>
 inoremap <C-c> <Esc>
 inoremap qq <ESC>
+inoremap <C-e> <ESC>$a
+inoremap <C-w> <ESC>0ei
 " imap <C-c> <Esc>:w<CR>
 
 " moves
