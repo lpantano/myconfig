@@ -37,3 +37,6 @@
 [submodule "tpm"]
 	path = tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "emacs/writegood-mode"]
+	path = emacs/writegood-mode
+	url = http://github.com/bnbeckwith/writegood-mode.git
