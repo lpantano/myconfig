@@ -1,0 +1,23 @@
+[push]
+	default = simple
+[user]
+	email = lorena.pantano@gmail.com
+	name = Lorena
+[credential]
+	helper = cache --timeout=3600
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --name-status
+    stat = status -sb
+    a = add
+    co = checkout
+    cm = commit
+    p = push
+    pl = pull
+    # Show verbose output about tags, branches or remotes
+    #   tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+[re]
+	editor = vim
+[core]
+	editor = vim
