@@ -1,3 +1,4 @@
+let mapleader=","
 execute pathogen#infect()
 filetype plugin indent on
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
@@ -14,14 +15,29 @@ highlight MatchParen cterm=bold ctermfg=cyan
 let python_highlight_all = 1
 let python_version_2 = 1
 
+" errors
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+
 " quick-save \s
-noremap <C-c> :update<CR>
-noremap <C-x><C-c> :quit<CR>
+noremap <C-c> :quit<CR>
+noremap <C-x> :update<CR>
+noremap <C-e> <ESC>$a
+noremap <C-w> <ESC>0ei
 " noremap <C-a> :insert<CR>
 " vnoremap <C-c> :update<CR>
-inoremap <C-c> <ESC>:update<CR>
-" inoremap <M-c> <Esc>
+inoremap <C-x> <ESC>:update<CR>
+inoremap <C-c> <Esc>
 inoremap qq <ESC>
+inoremap <C-e> <ESC>$a
+inoremap <C-w> <ESC>0ei
 " imap <C-c> <Esc>:w<CR>
 
 " moves
@@ -58,6 +74,8 @@ let g:pymode_rope = 0 " to be compatible with jedivim
 autocmd FileType python set completeopt-=preview " not showing __doc__ during autocompletion
 let g:jedi#auto_vim_configuration = 0
 let g:jedi#auto_initialization = 0
+let g:jedi#goto_definitions_command = "<leader>d"
+let g:jedi#rename_command = "<leader>r"
 
 " spell option
 nmap sc :setlocal spell spelllang=en_us

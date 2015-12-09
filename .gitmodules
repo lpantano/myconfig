@@ -31,3 +31,12 @@
 [submodule "vim/bundle/vim-slime"]
 	path = vim/bundle/vim-slime
 	url = https://github.com/jpalardy/vim-slime.git
+[submodule "tmux-resurrect"]
+	path = tmux-resurrect
+	url = http://github.com/tmux-plugins/tmux-resurrect
+[submodule "tpm"]
+	path = tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule "emacs/writegood-mode"]
+	path = emacs/writegood-mode
+	url = http://github.com/bnbeckwith/writegood-mode.git
