@@ -27,7 +27,7 @@ let g:syntastic_check_on_wq = 0
 
 
 " quick-save \s
-noremap <C-c> :quit<CR>
+noremap <C-c> :quit
 noremap <C-x> :update<CR>
 noremap <C-e> <ESC>$a
 noremap <C-w> <ESC>0ei
@@ -41,12 +41,10 @@ inoremap <C-w> <ESC>0ei
 " imap <C-c> <Esc>:w<CR>
 
 " moves
-inoremap <M-b> <C-o>l 
-inoremap <M-j> <C-o>j
-inoremap <M-h> <C-o>l
-inoremap <M-k> <C-o>k
-inoremap <M-b> <C-o>b
-inoremap <M-e> <C-o>e
+inoremap <C-l> <right>
+inoremap <C-h> <left>
+inoremap <C-k> <up>
+inoremap <C-j> <down>
 
 " Tell vim to remember certain things when we exit
 "
