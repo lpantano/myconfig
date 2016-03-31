@@ -1,5 +1,6 @@
 alias sshody="ssh  -Y -C -o ServerAliveInterval=30 -fN ody"
 alias sshorch="ssh -Y -C -o ServerAliveInterval=30 -fN orch"
+source ~/.alias
 # ignore a bunch of common history commands
 export HISTIGNORE="&:ls:[bf]g:exit"
 
@@ -9,7 +10,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # use some nice bash options
 #set -o noclobber
-set -o vi
+#set -o vi
 
 #add ssh-agent
 
@@ -106,6 +107,7 @@ alias mypip='/home/lpantano/soft/myconda/bin/pip'
 alias bcbpy='/home/lpantano/soft/bcbio/anaconda/bin/python'
 alias bcbcondata='/home/lpantano/soft/bcbio/anaconda/bin/conda'
 alias rmtempvim='find . -name ".*.sw*" -exec rm {} \;'
+alias docker-setup='eval "$(docker-machine env default)"'
 #bashaggent alias
 alias upagent='eval "$(ssh-agent -s)";ssh-add'
 
@@ -129,3 +131,6 @@ mumount='fusermount -u'
 mountorch='sshfs orch:. orch -o follow_symlinks'
 mountg1='sshfs glasgow1:. glasgow -o follow_symlinks'
 mountg2='sshfs glasgow2:. glasgow -o follow_symlinks'
+
+# added by Miniconda2 3.19.0 installer
+export PATH="/Users/lpantano/conda/bin:$PATH"
