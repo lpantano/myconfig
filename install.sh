@@ -10,7 +10,7 @@ export PS4='+(${BASH_SOURCE}:${LINENO}): ${FUNCNAME[0]:+${FUNCNAME[0]}(): }'
 
 DIRECTORY = myconfig
 
-cd ~
+cd
 
 if [ ! -d "$DIRECTORY" ]; then
  echo 'myconfig need to be at home directory'
@@ -19,13 +19,23 @@ if [ ! -d "$DIRECTORY" ]; then
  exit
 fi	
 
+mkdir -p .config
 
-ln -Lsb $DIRECTORY/bash/bashrc  .mybashrc
+ln -Lsb $DIRECTORY/bash/bashrc  .config/mybashrc
 
-echo 'source ~/.mybashrc' >> .bashrc
+echo 'source ~/.config/mybashrc' >> .bashrc
+
+git clone https://github.com/nojhan/liquidprompt.git
+
+ln -s $DIRECTORY/liquidprompt/my.theme ~/.config/.
+ln -s $DIRECTORY/liquidprompt/my.ps1 ~/.config/.
+ln -s $DIRECTORY/liquidprompt/liquidpromptrc ~/.config/liquidpromptrc
 
 ln -Lbs $DIRECTORY/.vimrc .vimrc
 
 ln -Lbs $DIRECTORY/vim .vim
+
+ln -Lbs $DIRECTORY/tmux.conf .tmux.conf
+mkdir .tmux
 
 echo 'installation complete, enjoy!'

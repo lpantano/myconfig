@@ -2,22 +2,9 @@
 
 `git clone https://github.com/lpantano/myconfig.git`
 
-`ln -s myconfig/bashrc .bash_profile`
-
-
 ## prompt terminal
 
 https://github.com/nojhan/liquidprompt
-
-```
-cd
-
-git clone https://github.com/nojhan/liquidprompt.git
-
-mkdir -p .config
-
-ln -s myconfig/liquidprompt/liquidpromptrc ~/.config/liquidpromptrc
-```
 
 Developer:
 
