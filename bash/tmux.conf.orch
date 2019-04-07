@@ -1,22 +1,17 @@
-# custom
 unbind b
 set -g prefix C-s
 
 
 setw -g xterm-keys on
-set -g mouse on
-bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'copy-mode -e'"
-
+set -g mode-mouse on
+set -g mouse-select-pane on
 # copy-paste
-# https://evertpot.com/osx-tmux-vim-copy-paste-clipboard/
-# Copy-paste integration
-# set-option -g default-command "reattach-to-user-namespace -l bash"
-#bind Escape copy-mode
+bind Escape copy-mode
 unbind p
 bind p paste-buffer
 bind-key -t vi-copy 'v' begin-selection
 bind-key -t vi-copy 'y' copy-selection
-# bind -T copy-mode-vi y send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
+
 # act like vim
 setw -g mode-keys vi
 bind h select-pane -L
@@ -35,8 +30,6 @@ bind-key Up    select-pane -U
 bind-key Down  select-pane -D
 bind-key Left  select-pane -L
 bind-key Right select-pane -R
-bind-key h split-window -h # Split panes horizontal
-bind-key b split-window -v # Split panes vertically
 
 # look good
 set -g default-terminal "screen-256color"
@@ -75,19 +68,3 @@ set-option -g display-panes-colour colour166 #orange
 
 # clock
 set-window-option -g clock-mode-colour colour64 #green
-
-
-# restore session
-set -g @continuum-restore 'on'
-
-# tpm
-set -g @plugin 'tmux-plugins/tpm'
-set -g @plugin 'tmux-plugins/tmux-sensible'
-
-set -g @plugin 'tmux-plugins/tmux-resurrect'
-set -g @plugin 'tmux-plugins/tmux-continuum'
-
-
-# run-shell ~/myconfig/tmux-resurrect/resurrect.tmux
-
-run '~/.tmux/plugins/tpm/tpm'

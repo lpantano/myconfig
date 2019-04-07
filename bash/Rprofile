@@ -1,0 +1,36 @@
+options(tz = "America/New_York")
+Sys.setenv(TZ="America/New_York")
+
+bioc <- function(p){
+    BiocInstaller::biocLite(p)
+}
+
+biocdevel <- function(p){
+    devtools::install_git(paste0("https://git@git.bioconductor.org/packages/", p))
+}
+
+
+loaddevel <- function(){
+    library(devtools)
+    library(testthat)
+}
+
+install <- function(p = getwd()){
+    devtools::install_local(p)
+}
+
+
+universe <- function(){
+    library(tidyverse)
+    library(purrr)
+    library(tibble)
+    library(janitor)
+    library(rio)
+    library(ggplot2)
+    library(cowplot)
+    library(ggrepel)
+}
+
+
+options(prompt="R> ", digits=4)
+
