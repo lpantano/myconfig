@@ -113,8 +113,6 @@ alias docker-setup='eval "$(docker-machine env default)"'
 #bashaggent alias
 alias upagent='eval "$(ssh-agent -s)";ssh-add'
 
-# export PATH=~/bin:$PATH
-
 # customr alias
 alias remove_blank_lines="sed -i '/^$/d'"
 alias sq='squeue -u lpantano'

@@ -37,3 +37,6 @@
 [submodule "emacs/writegood-mode"]
 	path = emacs/writegood-mode
 	url = http://github.com/bnbeckwith/writegood-mode.git
+[submodule "vim/bundle/Vundle.vim"]
+	path = vim/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
