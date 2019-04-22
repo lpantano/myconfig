@@ -33,7 +33,7 @@ ln -s ../$DIRECTORY/liquidprompt/my.ps1 ~/.config/.
 ln -s ../$DIRECTORY/liquidprompt/liquidpromptrc ~/.config/liquidpromptrc
 cd ..
 
-ln -Lbs $DIRECTORY/.vimrc .vimrc
+ln -Lbs $DIRECTORY/bash/vimrc .vimrc
 
 ln -Lbs $DIRECTORY/vim .vim
 
