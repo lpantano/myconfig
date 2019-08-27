@@ -104,10 +104,6 @@ alias ll='ls -lh'
 alias la='ls -A'
 alias l='ls -CF'
 alias bt='byobu-tmux'
-alias mypython='/home/lpantano/soft/myconda/bin/python'
-alias mypip='/home/lpantano/soft/myconda/bin/pip'
-alias bcbpy='/home/lpantano/soft/bcbio/anaconda/bin/python'
-alias bcbcondata='/home/lpantano/soft/bcbio/anaconda/bin/conda'
 alias rmtempvim='find . -name ".*.sw*" -exec rm {} \;'
 alias docker-setup='eval "$(docker-machine env default)"'
 #bashaggent alias
@@ -127,14 +123,6 @@ bcblog='less log/bcbio-nextgen.log'
 bcbcmd='less log/bcbio-nextgen-commands.log'
 
 # mounts
-alias umntorch='fusermount -u ~/orch'
-alias mntorch='sshfs orchtransf:. ~/orch -o delay_connect -o follow_symlinks'
+# alias mntorch='sshfs orchtransf:. ~/orch -o delay_connect -o follow_symlinks'
 
-# Rfunctions
-rrender () {
-    cmd="Rscript -e 'library(rmarkdown); render(\"$1\")'"; echo $cmd; eval $cmd;
-}
-# export -f rrender
 
-# added by Miniconda2 4.3.21 installer
-export PATH="/Users/lpantano/miniconda2/bin:$PATH"
