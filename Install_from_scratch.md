@@ -29,3 +29,9 @@ VIM
 
 * in case of problems with modules: git submodule update --recursive --remote
 * conda install jedi
+
+TMUX
+
+Install new version of tmux if needed: http://jhshi.me/2016/07/08/installing-tmux-from-source-non-root/index.html
+
+`tmux source ~/.tmux.config`
