@@ -2,9 +2,7 @@
 
 `git clone https://github.com/lpantano/myconfig.git`
 
-## prompt terminal
 
-https://github.com/nojhan/liquidprompt
 
 Developer:
 
@@ -19,6 +17,7 @@ R related:
 Others:
 
 * iterm2
+* https://github.com/nojhan/liquidprompt
 * sublime https://download.sublimetext.com/Sublime%20Text%20Build%203126.dmg
 
 Network:
