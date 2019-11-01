@@ -8,7 +8,7 @@ set -v
 set -x
 export PS4='+(${BASH_SOURCE}:${LINENO}): ${FUNCNAME[0]:+${FUNCNAME[0]}(): }'
 
-DIRECTORY=myconfig
+DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 cd
 
@@ -25,12 +25,12 @@ ln -Lsb $DIRECTORY/bash/bashrc  .config/mybashrc
 
 echo 'source ~/.config/mybashrc' >> .bashrc
 
-git clone https://github.com/nojhan/liquidprompt.git
+#   git clone https://github.com/nojhan/liquidprompt.git
 
 cd .config
-ln -s ../$DIRECTORY/liquidprompt/my.theme ~/.config/.
-ln -s ../$DIRECTORY/liquidprompt/my.ps1 ~/.config/.
-ln -s ../$DIRECTORY/liquidprompt/liquidpromptrc ~/.config/liquidpromptrc
+ln -s -f ../$DIRECTORY/liquidprompt/my.theme ~/.config/.
+ln -s -f ../$DIRECTORY/liquidprompt/my.ps1 ~/.config/.
+ln -s -f ../$DIRECTORY/liquidprompt/liquidpromptrc ~/.config/liquidpromptrc
 cd ..
 
 ln -Lbs $DIRECTORY/bash/vimrc .vimrc
